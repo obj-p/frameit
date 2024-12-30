@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [{ name = "obj-p" }]
+description = ""
+name = "frameit"
+version = "0.0.1"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "click>=8.1.0",
+  "lxml>=5.3",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit>=4.0",
+]
+
+[project.scripts]
+frameit = "frameit.frameit:frameit"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
