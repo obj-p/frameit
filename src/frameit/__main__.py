@@ -1,3 +1,3 @@
-from .frameit import frameit
+from frameit.frameit import frameit
 
 frameit()
